@@ -2,8 +2,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-import lib.layers as layers
-import lib.layers.base as base_layers
+from . import layers
+from layers import base as base_layers
 
 ACT_FNS = {
     'softplus': lambda b: nn.Softplus(),
